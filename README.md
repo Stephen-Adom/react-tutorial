@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h1><b>Todo App</b></h1>
+  <h1><b>Todo Application</b></h1>
 
 </div>
 
