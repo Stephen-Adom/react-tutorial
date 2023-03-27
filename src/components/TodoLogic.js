@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { v4 as uuidv4 } from "uuid";
+
 import InputTodo from "./InputTodo";
 import TodoList from "./TodoList";
 
@@ -45,7 +47,7 @@ const TodoLogic = () => {
 
 	const addTodoItem = (title) => {
 		const newTodo = {
-			id: 4,
+			id: uuidv4(),
 			title: title,
 			completed: false,
 		};
