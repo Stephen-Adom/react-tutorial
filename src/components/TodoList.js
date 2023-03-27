@@ -2,7 +2,7 @@ import React from "react";
 import TodoItem from "./TodoItem";
 
 const TodoList = (props) => {
-	const { todos, handleChange, delTodo } = props;
+	const { todos, handleChange, delTodo, setUpdate } = props;
 	return (
 		<div>
 			<ul>
@@ -12,6 +12,7 @@ const TodoList = (props) => {
 						itemProp={todo}
 						handleChange={handleChange}
 						delTodo={delTodo}
+						setUpdate={setUpdate}
 					></TodoItem>
 				))}
 			</ul>
