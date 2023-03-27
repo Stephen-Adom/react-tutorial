@@ -4,9 +4,11 @@ import TodoLogic from "./TodoLogic";
 
 const TodoApp = () => {
 	return (
-		<div>
-			<Header></Header>
-			<TodoLogic></TodoLogic>
+		<div className="wrapper">
+			<div className="todos">
+				<Header></Header>
+				<TodoLogic></TodoLogic>
+			</div>
 		</div>
 	);
 };
