@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./routes/Home";
 import About from "./routes/About";
-import Login from "./routes/Login";
 import Profile from "./routes/Profile";
 import NotMatch from "./routes/NoMatch";
 
@@ -24,10 +23,6 @@ const router = createBrowserRouter([
 			{
 				path: "about",
 				element: <About></About>,
-			},
-			{
-				path: "login",
-				element: <Login></Login>,
 			},
 			{
 				path: "profile",

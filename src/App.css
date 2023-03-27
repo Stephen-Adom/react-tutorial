@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Segoe UI", sans-serif;
   line-height: 1.4;
@@ -12,14 +13,29 @@ body {
   font-weight: 400;
 }
 
+.navbar{
+  display: flex;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+
+.navbar ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	width: 19%;
+}
+
 .wrapper {
   width: 100%;
-  padding: 8rem 20px 3rem;
 }
-.todos {
+
+.todos, .page-wrapper {
   max-width: 580px;
   margin: 0 auto;
 }
+
 .form-container {
   display: flex;
   border-radius: calc(0.1 * 100px);
@@ -28,6 +44,7 @@ body {
   background: #fff;
   font-size: 1rem;
 }
+
 .input-text {
   width: 85%;
   padding-right: 5px;
@@ -35,9 +52,11 @@ body {
   border-radius: calc(0.5 * 100px);
   font-size: 1rem;
 }
+
 .input-text::placeholder {
   color: #000;
 }
+
 .input-submit {
   background: transparent;
   color: #5b5b5b;
@@ -46,15 +65,32 @@ body {
   font-weight: 600;
   margin-right: 10px;
 }
+
 .input-text,
 .input-submit {
   height: 45px;
   outline: none;
   border: none;
 }
+
 .submit-warning {
   font-size: 13px;
   color: red;
   margin-top: 5px;
   display: block;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Active route */
+.active__class {
+  color: #8a4baf;
+}
+
+.back-btn {
+	padding: 6px 20px;
+	margin-top: 15px;
 }

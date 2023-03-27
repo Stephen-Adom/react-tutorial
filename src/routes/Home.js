@@ -4,11 +4,9 @@ import TodoLogic from "../components/TodoLogic";
 
 const Home = () => {
 	return (
-		<div className="wrapper">
-			<div className="todos">
-				<Header></Header>
-				<TodoLogic></TodoLogic>
-			</div>
+		<div className="todos">
+			<Header></Header>
+			<TodoLogic></TodoLogic>
 		</div>
 	);
 };
