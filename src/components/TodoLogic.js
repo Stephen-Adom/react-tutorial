@@ -43,9 +43,18 @@ const TodoLogic = () => {
 		]);
 	};
 
+	const addTodoItem = (title) => {
+		const newTodo = {
+			id: 4,
+			title: title,
+			completed: false,
+		};
+		setTodos([...todos, newTodo]);
+	};
+
 	return (
 		<div>
-			<InputTodo></InputTodo>
+			<InputTodo addTodoItem={addTodoItem}></InputTodo>
 			<TodoList
 				todos={todos}
 				handleChange={handleChange}

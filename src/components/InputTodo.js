@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const InputTodo = () => {
+const InputTodo = ({ addTodoItem }) => {
 	const [title, setTitle] = useState("");
 
 	const handleChange = (e) => {
@@ -9,7 +9,7 @@ const InputTodo = () => {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		console.log(title);
+		addTodoItem(title);
 		setTitle("");
 	};
 
