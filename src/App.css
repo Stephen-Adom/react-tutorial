@@ -13,7 +13,7 @@ body {
   font-weight: 400;
 }
 
-.navbar{
+.navbar {
   display: flex;
   padding: 20px;
   width: 70%;
@@ -21,17 +21,18 @@ body {
 }
 
 .navbar ul {
-	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	width: 19%;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 19%;
 }
 
 .wrapper {
   width: 100%;
 }
 
-.todos, .page-wrapper {
+.todos,
+.page-wrapper {
   max-width: 580px;
   margin: 0 auto;
 }
@@ -39,7 +40,7 @@ body {
 .form-container {
   display: flex;
   border-radius: calc(0.1 * 100px);
-  box-shadow: 0px 4px 14px 0px rgba(70, 70, 70, 0.38);
+  box-shadow: 0 4px 14px 0 rgba(70, 70, 70, 0.38);
   justify-content: space-around;
   background: #fff;
   font-size: 1rem;
@@ -91,6 +92,6 @@ a {
 }
 
 .back-btn {
-	padding: 6px 20px;
-	margin-top: 15px;
+  padding: 6px 20px;
+  margin-top: 15px;
 }
