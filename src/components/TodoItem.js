@@ -25,7 +25,12 @@ const TodoItem = ({ itemProp, handleChange, delTodo, setUpdate }) => {
 
 	return (
 		<li className={styles.item}>
-			<div className={styles.content} style={viewMode}>
+			<div
+				className={`${styles.content} ${
+					itemProp.completed && styles.completed
+				}`}
+				style={viewMode}
+			>
 				<input
 					type="checkbox"
 					checked={itemProp.completed}
