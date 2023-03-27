@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FaTrash } from 'react-icons/fa';
 import { AiFillEdit } from 'react-icons/ai';
 import styles from '../styles/TodoItem.module.css';
@@ -28,8 +29,7 @@ const TodoItem = ({
   return (
     <li className={styles.item}>
       <div
-        className={`${styles.content} ${
-				  itemProp.completed && styles.completed
+        className={`${styles.content} ${itemProp.completed && styles.completed
         }`}
         style={viewMode}
       >
@@ -41,10 +41,10 @@ const TodoItem = ({
         {itemProp.title}
 
         <div>
-          <button onClick={handleEditing}>
+          <button type="button" onClick={handleEditing}>
             <AiFillEdit />
           </button>
-          <button onClick={() => delTodo(itemProp.id)}>
+          <button type="button" onClick={() => delTodo(itemProp.id)}>
             <FaTrash />
           </button>
         </div>
@@ -59,6 +59,20 @@ const TodoItem = ({
       />
     </li>
   );
+};
+
+TodoItem.propTypes = {
+  itemProp: PropTypes.shape({
+    id: PropTypes.oneOfType([
+      PropTypes.number,
+      PropTypes.string,
+    ]),
+    title: PropTypes.string,
+    completed: PropTypes.bool,
+  }).isRequired,
+  handleChange: PropTypes.func.isRequired,
+  delTodo: PropTypes.func.isRequired,
+  setUpdate: PropTypes.func.isRequired,
 };
 
 export default TodoItem;

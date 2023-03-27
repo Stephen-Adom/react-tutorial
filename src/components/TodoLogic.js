@@ -54,7 +54,8 @@ const TodoLogic = () => {
     setTodos(
       todos.map((todo) => {
         if (todo.id === id) {
-          todo.title = updatedTitle;
+          const selectedTodo = todo;
+          selectedTodo.title = updatedTitle;
         }
         return todo;
       }),
